@@ -19,3 +19,8 @@ let g:syntastic_auto_loc_list=1
 "let g:syntastic_puppet_checkers=['puppetlint']
 "
 let g:vim_markdown_folding_disabled=1
+
+"Auto-detect indenting
+let g:detectindent_preferred_expandtab=1
+let g:detectindent_preferred_indent=4
+autocmd BufReadPost * :DetectIndent
