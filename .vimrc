@@ -24,3 +24,6 @@ let g:vim_markdown_folding_disabled=1
 let g:detectindent_preferred_expandtab=1
 let g:detectindent_preferred_indent=4
 autocmd BufReadPost * :DetectIndent
+
+"Highlight all search pattern matches
+set hlsearch
