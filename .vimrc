@@ -37,4 +37,4 @@ noremap  <buffer> <silent> <End>  g<End>
 inoremap <buffer> <silent> <Up>   <C-o>gk
 inoremap <buffer> <silent> <Down> <C-o>gj
 inoremap <buffer> <silent> <Home> <C-o>g<Home>
-inoremap <buffer> <silent> <End>  <C-o>g<End>"
+inoremap <buffer> <silent> <End>  <C-o>g<End>
