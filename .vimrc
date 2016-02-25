@@ -41,3 +41,6 @@ inoremap <buffer> <silent> <End>  <C-o>g<End>
 
 " Show last line, even if partial
 set display=lastline
+
+" Use X clipboard for better integration
+set clipboard=unnamedplus
