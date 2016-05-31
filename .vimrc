@@ -14,6 +14,9 @@ set statusline+=%*
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:syntastic_auto_loc_list=1
+let g:syntastic_python_pylint_exec = '/usr/bin/pylint3'
+let g:syntastic_python_checkers = ['pylint']
+
 
 "To enable Just puppet-lint and disable the parser uncomment next line
 "let g:syntastic_puppet_checkers=['puppetlint']
