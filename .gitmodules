@@ -40,3 +40,6 @@
 [submodule "bundle/detectindent"]
 	path = bundle/detectindent
 	url = https://github.com/ciaranm/detectindent.git
+[submodule "bundle/cscope-maps"]
+	path = bundle/cscope-maps
+	url = https://github.com/joe-skb7/cscope-maps.git
