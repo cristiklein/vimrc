@@ -105,10 +105,23 @@ function SetKernelDevelopment()
   autocmd BufWinLeave * call clearmatches()
 endfunction
 
+function SetDefaultDevelopment()
+  setlocal expandtab shiftwidth=4
+  setlocal colorcolumn=80
+  highlight ColorColumn ctermbg=Black ctermfg=DarkRed
+  highlight ExtraWhitespace ctermbg=red guibg=red
+  match ExtraWhitespace /^\t*\zs \+/
+  autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+  autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+  autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+  autocmd BufWinLeave * call clearmatches()
+endfunction
+
 if has("autocmd")
   " Jump to the last position when reopening a file
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+  au BufNewFile,BufRead * call SetDefaultDevelopment()
   au BufNewFile,BufRead */linux/*.c call SetKernelDevelopment()
 endif
 
