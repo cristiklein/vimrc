@@ -117,11 +117,16 @@ function SetDefaultDevelopment()
   autocmd BufWinLeave * call clearmatches()
 endfunction
 
+function Set2SpaceDevelopment()
+  setlocal expandtab shiftwidth=2
+endfunction
+
 if has("autocmd")
   " Jump to the last position when reopening a file
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
   au BufNewFile,BufRead * call SetDefaultDevelopment()
+  au BufNewFile,BufRead *.js,*.yaml,*.yml call Set2SpaceDevelopment()
   au BufNewFile,BufRead */linux/*.c call SetKernelDevelopment()
 endif
 
