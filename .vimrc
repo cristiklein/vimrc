@@ -121,6 +121,18 @@ function Set2SpaceDevelopment()
   setlocal expandtab shiftwidth=2
 endfunction
 
+function SetMakefileDevelopment()
+  setlocal noexpandtab shiftwidth=8
+  setlocal colorcolumn=80
+  highlight ColorColumn ctermbg=Black ctermfg=DarkRed
+  highlight ExtraWhitespace ctermbg=red guibg=red
+  match ExtraWhitespace /^[ ]*\zs \+/
+  autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+  autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+  autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+  autocmd BufWinLeave * call clearmatches()
+endfunction
+
 if has("autocmd")
   " Jump to the last position when reopening a file
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -128,6 +140,7 @@ if has("autocmd")
   au BufNewFile,BufRead * call SetDefaultDevelopment()
   au BufNewFile,BufRead *.js,*.yaml,*.yml call Set2SpaceDevelopment()
   au BufNewFile,BufRead */linux/*.c call SetKernelDevelopment()
+  au BufNewFile,BufRead Makefile call SetMakefileDevelopment()
 endif
 
 call SetOmniCompletion()
