@@ -138,7 +138,7 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
   au BufNewFile,BufRead * call SetDefaultDevelopment()
-  au BufNewFile,BufRead *.js,*.yaml,*.yml call Set2SpaceDevelopment()
+  au BufNewFile,BufRead *.js,*.tf,*.yaml,*.yml call Set2SpaceDevelopment()
   au BufNewFile,BufRead */linux/*.c call SetKernelDevelopment()
   au BufNewFile,BufRead Makefile call SetMakefileDevelopment()
 endif
