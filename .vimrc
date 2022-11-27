@@ -7,6 +7,7 @@ filetype indent plugin on
 set expandtab
 set smarttab
 set autoindent
+set nofixendofline
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
