@@ -1,0 +1,12 @@
+[submodule "/home/cklein/.vim/pack/syntax/start/ale"]
+	path = /home/cklein/.vim/pack/syntax/start/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule "/home/cklein/.vim/pack/git/start/vim-gitgutter"]
+	path = /home/cklein/.vim/pack/git/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "/home/cklein/.vim/pack/syntax/start/editorconfig"]
+	path = /home/cklein/.vim/pack/syntax/start/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "/home/cklein/.vim/pack/spell/start/vim-spellsync"]
+	path = /home/cklein/.vim/pack/spell/start/vim-spellsync
+	url = https://github.com/micarmst/vim-spellsync.git
