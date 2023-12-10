@@ -10,3 +10,6 @@
 [submodule "/home/cklein/.vim/pack/spell/start/vim-spellsync"]
 	path = /home/cklein/.vim/pack/spell/start/vim-spellsync
 	url = https://github.com/micarmst/vim-spellsync.git
+[submodule "/home/cklein/.vim/pack/ergonomics/start/vim-unimpaired"]
+	path = /home/cklein/.vim/pack/ergonomics/start/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
