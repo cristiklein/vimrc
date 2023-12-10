@@ -37,3 +37,6 @@
 [submodule "bundle/cscope-maps"]
 	path = bundle/cscope-maps
 	url = https://github.com/joe-skb7/cscope-maps.git
+[submodule "/home/cklein/.vim/bundle/ale"]
+	path = /home/cklein/.vim/bundle/ale
+	url = https://github.com/dense-analysis/ale
