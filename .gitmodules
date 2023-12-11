@@ -1,15 +1,15 @@
-[submodule "/home/cklein/.vim/pack/syntax/start/ale"]
-	path = /home/cklein/.vim/pack/syntax/start/ale
+[submodule "pack/syntax/start/ale"]
+	path = pack/syntax/start/ale
 	url = https://github.com/dense-analysis/ale.git
-[submodule "/home/cklein/.vim/pack/git/start/vim-gitgutter"]
-	path = /home/cklein/.vim/pack/git/start/vim-gitgutter
+[submodule "pack/git/start/vim-gitgutter"]
+	path = pack/git/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
-[submodule "/home/cklein/.vim/pack/syntax/start/editorconfig"]
-	path = /home/cklein/.vim/pack/syntax/start/editorconfig
+[submodule "pack/syntax/start/editorconfig"]
+	path = pack/syntax/start/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "/home/cklein/.vim/pack/spell/start/vim-spellsync"]
-	path = /home/cklein/.vim/pack/spell/start/vim-spellsync
+[submodule "pack/spell/start/vim-spellsync"]
+	path = pack/spell/start/vim-spellsync
 	url = https://github.com/micarmst/vim-spellsync.git
-[submodule "/home/cklein/.vim/pack/ergonomics/start/vim-unimpaired"]
-	path = /home/cklein/.vim/pack/ergonomics/start/vim-unimpaired
+[submodule "pack/ux/start/vim-unimpaired"]
+	path = pack/ux/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
