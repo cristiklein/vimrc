@@ -1,3 +1,6 @@
+" Load good vim defaults
+source $VIMRUNTIME/vimrc_example.vim
+
 " Most stuff is configured using packs
 
 " Allow copy-pasting between other applications
