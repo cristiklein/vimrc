@@ -20,3 +20,6 @@ inoremap <buffer> <silent> <Up>   <C-o>gk
 inoremap <buffer> <silent> <Down> <C-o>gj
 inoremap <buffer> <silent> <Home> <C-o>g<Home>
 inoremap <buffer> <silent> <End>  <C-o>g<End>
+
+" Never used these, never needed these
+set nobackup nowritebackup noundofile
