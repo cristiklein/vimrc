@@ -13,3 +13,6 @@
 [submodule "pack/ux/start/vim-unimpaired"]
 	path = pack/ux/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "pack/misc/start/aw-watcher-vim"]
+	path = pack/misc/start/aw-watcher-vim
+	url = https://github.com/ActivityWatch/aw-watcher-vim.git
