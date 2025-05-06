@@ -23,3 +23,7 @@ inoremap <buffer> <silent> <End>  <C-o>g<End>
 
 " Never used these, never needed these
 set nobackup nowritebackup noundofile
+
+" Unindent visually selected lines and reselect them
+vnoremap < <gv
+vnoremap > >gv
